@@ -28,7 +28,7 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Crear estructura de directorios y descargar referencia oficial de comandos de Microsoft
+- [x] 01-01-PLAN.md — Crear estructura de directorios y descargar referencia oficial de comandos de Microsoft
 - [ ] 01-02-PLAN.md — Generar SKILL.md con skill-creator y verificar reconocimiento por Claude Code
 
 ### Phase 2: Protocolo y Reglas
@@ -69,6 +69,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Estructura Base | 0/2 | Not started | - |
+| 1. Estructura Base | 1/2 | In progress | - |
 | 2. Protocolo y Reglas | 0/2 | Not started | - |
 | 3. Evals y Optimizacion | 0/2 | Not started | - |
