@@ -1,0 +1,107 @@
+# Requirements: playwright-testing skill
+
+**Defined:** 2026-03-17
+**Core Value:** Claude SIEMPRE usa playwright-cli como único punto de entrada al navegador, con protocolo de diagnóstico estructurado
+
+## v1 Requirements
+
+### Skill Structure
+
+- [ ] **STRUC-01**: Skill tiene SKILL.md principal con protocolo completo en < 300 líneas
+- [ ] **STRUC-02**: Skill tiene references/playwright-cli-commands.md descargado del repo oficial de Microsoft
+- [ ] **STRUC-03**: Skill instalado globalmente en ~/.claude/skills/playwright-testing/
+- [ ] **STRUC-04**: Skill creado usando skill-creator (no manualmente)
+
+### Protocol
+
+- [ ] **PROTO-01**: Paso 0 — verificar instalación de playwright-cli antes de usarlo
+- [ ] **PROTO-02**: Paso 1 — buscar credenciales en .env.local → .env.development → .env antes de preguntar al usuario
+- [ ] **PROTO-03**: Paso 1 — confirmar URL del entorno (dev/staging/prod) antes de abrir el navegador
+- [ ] **PROTO-04**: Paso 2 — ejecutar snapshot antes de cada interacción significativa
+- [ ] **PROTO-05**: Paso 2 — usar sessions nombradas por proyecto con --session=<nombre>
+- [ ] **PROTO-06**: Paso 3 — ejecutar console + network obligatoriamente ante cualquier error
+- [ ] **PROTO-07**: Paso 3 — identificar causa raíz (401/403, 500, error JS, bug UI puro) y mostrar resumen
+- [ ] **PROTO-08**: Paso 4 — corregir código y mostrar diff de cambios
+- [ ] **PROTO-09**: Paso 5 — re-test del flujo completo desde Paso 2 para confirmar fix
+
+### Rules
+
+- [ ] **RULE-01**: Regla NUNCA para curl/wget en interacciones de browser (con razón: no da console/network/estado)
+- [ ] **RULE-02**: Regla NUNCA para Playwright MCP server (con razón: 4x más tokens, menos control)
+- [ ] **RULE-03**: Regla NUNCA para @playwright/test o scripts ad-hoc de Node.js (con razón: playwright-cli es suficiente)
+- [ ] **RULE-04**: Regla NUNCA para asumir credenciales sin verificar .env (con razón: credenciales incorrectas = diagnóstico falso)
+- [ ] **RULE-05**: Regla SIEMPRE snapshot antes de interactuar (con razón: sin snapshot no hay refs disponibles)
+- [ ] **RULE-06**: Regla SIEMPRE console + network ante error (con razón: diagnóstico incompleto sin ambos)
+
+### Triggers
+
+- [ ] **TRIG-01**: Description del frontmatter activa el skill ante bugs de frontend, formularios rotos, errores visuales
+- [ ] **TRIG-02**: Description activa el skill ante verificación de flujos web (login, CRUD, navegación)
+- [ ] **TRIG-03**: Description activa el skill ante CUALQUIER interacción necesaria con el navegador web
+- [ ] **TRIG-04**: Skill NO se activa para API testing sin frontend, unit tests, queries DB
+
+### Validation
+
+- [ ] **EVAL-01**: evals/evals.json con 5 test cases del PRD (error al guardar, login, CRUD sin credenciales, 403, botón sin respuesta)
+- [ ] **EVAL-02**: Test cases incluyen prompts ambiguos que no mencionan "playwright" explícitamente
+- [ ] **EVAL-03**: Assertions verifican: herramienta correcta, session nombrada, snapshot primero, diagnóstico completo, credenciales, ciclo completo
+- [ ] **EVAL-04**: Description optimizada via skill-creator run_loop.py con trigger rate >80%
+
+## v2 Requirements
+
+### Advanced Features
+
+- **ADV-01**: Storage state (state-save/state-load) para preservar sesión entre conversations
+- **ADV-02**: Comparación de tokens playwright-cli vs MCP en output de diagnóstico
+- **ADV-03**: Checklist de verificación post-fix antes de cerrar ciclo
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| Generación de scripts @playwright/test para CI/CD | Herramienta distinta, otro propósito |
+| Testing de APIs con curl | Sin frontend involucrado, curl está bien |
+| Unit tests con Jest/Vitest | Herramientas distintas, no browser |
+| Queries directas a base de datos | Sin interacción con browser |
+| Screenshots guardados en disco | Uso interno solamente, snapshot es suficiente |
+
+## Traceability
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| STRUC-01 | — | Pending |
+| STRUC-02 | — | Pending |
+| STRUC-03 | — | Pending |
+| STRUC-04 | — | Pending |
+| PROTO-01 | — | Pending |
+| PROTO-02 | — | Pending |
+| PROTO-03 | — | Pending |
+| PROTO-04 | — | Pending |
+| PROTO-05 | — | Pending |
+| PROTO-06 | — | Pending |
+| PROTO-07 | — | Pending |
+| PROTO-08 | — | Pending |
+| PROTO-09 | — | Pending |
+| RULE-01 | — | Pending |
+| RULE-02 | — | Pending |
+| RULE-03 | — | Pending |
+| RULE-04 | — | Pending |
+| RULE-05 | — | Pending |
+| RULE-06 | — | Pending |
+| TRIG-01 | — | Pending |
+| TRIG-02 | — | Pending |
+| TRIG-03 | — | Pending |
+| TRIG-04 | — | Pending |
+| EVAL-01 | — | Pending |
+| EVAL-02 | — | Pending |
+| EVAL-03 | — | Pending |
+| EVAL-04 | — | Pending |
+
+**Coverage:**
+- v1 requirements: 27 total
+- Mapped to phases: 0
+- Unmapped: 27 ⚠️
+
+---
+*Requirements defined: 2026-03-17*
+*Last updated: 2026-03-17 after initial definition*
