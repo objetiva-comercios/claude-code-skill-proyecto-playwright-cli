@@ -25,11 +25,11 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
   2. `references/playwright-cli-commands.md` contiene la referencia descargada del repo oficial de Microsoft (no escrita de memoria)
   3. El SKILL.md fue generado usando skill-creator (evidencia en el proceso, no escrito manualmente)
   4. Claude Code reconoce el skill al preguntar "What skills are available?"
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Descargar referencia oficial de comandos playwright-cli del repo microsoft/playwright-cli
-- [ ] 01-02: Crear skill inicial con skill-creator e instalar en ~/.claude/skills/playwright-testing/
+- [ ] 01-01-PLAN.md — Crear estructura de directorios y descargar referencia oficial de comandos de Microsoft
+- [ ] 01-02-PLAN.md — Generar SKILL.md con skill-creator y verificar reconocimiento por Claude Code
 
 ### Phase 2: Protocolo y Reglas
 **Goal**: El SKILL.md contiene el protocolo completo de 5 pasos operativo, todas las reglas NUNCA/SIEMPRE con sus razones, el manejo de credenciales y sessions, y los triggers y boundaries definidos — todo en menos de 300 lineas
