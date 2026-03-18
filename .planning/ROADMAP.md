@@ -10,7 +10,7 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
 - Integer phases (1, 2, 3): Planned milestone work
 - Decimal phases (2.1, 2.2): Urgent insertions (marcados con INSERTED)
 
-- [ ] **Phase 1: Estructura Base** - Skill scaffolding creado con skill-creator, referencia oficial descargada, instalado globalmente
+- [x] **Phase 1: Estructura Base** - Skill scaffolding creado con skill-creator, referencia oficial descargada, instalado globalmente
 - [ ] **Phase 2: Protocolo y Reglas** - Protocolo de 5 pasos completo, reglas NUNCA/SIEMPRE con razones, triggers y boundaries definidos
 - [ ] **Phase 3: Evals y Optimizacion** - 5 test cases con assertions, descripcion optimizada con trigger rate >80%
 
@@ -29,7 +29,7 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
 
 Plans:
 - [x] 01-01-PLAN.md — Crear estructura de directorios y descargar referencia oficial de comandos de Microsoft
-- [ ] 01-02-PLAN.md — Generar SKILL.md con skill-creator y verificar reconocimiento por Claude Code
+- [x] 01-02-PLAN.md — Generar SKILL.md con skill-creator y verificar reconocimiento por Claude Code
 
 ### Phase 2: Protocolo y Reglas
 **Goal**: El SKILL.md contiene el protocolo completo de 5 pasos operativo, todas las reglas NUNCA/SIEMPRE con sus razones, el manejo de credenciales y sessions, y los triggers y boundaries definidos — todo en menos de 300 lineas
@@ -69,6 +69,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Estructura Base | 1/2 | In progress | - |
+| 1. Estructura Base | 2/2 | Complete | 2026-03-18 |
 | 2. Protocolo y Reglas | 0/2 | Not started | - |
 | 3. Evals y Optimizacion | 0/2 | Not started | - |

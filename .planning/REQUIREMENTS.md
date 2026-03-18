@@ -7,10 +7,10 @@
 
 ### Skill Structure
 
-- [ ] **STRUC-01**: Skill tiene SKILL.md principal con protocolo completo en < 300 líneas
+- [x] **STRUC-01**: Skill tiene SKILL.md principal con protocolo completo en < 300 líneas
 - [x] **STRUC-02**: Skill tiene references/playwright-cli-commands.md descargado del repo oficial de Microsoft
 - [x] **STRUC-03**: Skill instalado globalmente en ~/.claude/skills/playwright-testing/
-- [ ] **STRUC-04**: Skill creado usando skill-creator (no manualmente)
+- [x] **STRUC-04**: Skill creado usando skill-creator (no manualmente)
 
 ### Protocol
 
@@ -69,10 +69,10 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| STRUC-01 | Phase 1 | Pending |
+| STRUC-01 | Phase 1 | Complete (01-02) |
 | STRUC-02 | Phase 1 | Complete (01-01) |
 | STRUC-03 | Phase 1 | Complete (01-01) |
-| STRUC-04 | Phase 1 | Pending |
+| STRUC-04 | Phase 1 | Complete (01-02) |
 | PROTO-01 | Phase 2 | Pending |
 | PROTO-02 | Phase 2 | Pending |
 | PROTO-03 | Phase 2 | Pending |
@@ -104,4 +104,4 @@
 
 ---
 *Requirements defined: 2026-03-17*
-*Last updated: 2026-03-18 after plan 01-01 execution (STRUC-02, STRUC-03 complete)*
+*Last updated: 2026-03-18 after plan 01-02 execution (STRUC-01, STRUC-04 complete — Phase 1 completa)*
