@@ -69,39 +69,39 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| STRUC-01 | — | Pending |
-| STRUC-02 | — | Pending |
-| STRUC-03 | — | Pending |
-| STRUC-04 | — | Pending |
-| PROTO-01 | — | Pending |
-| PROTO-02 | — | Pending |
-| PROTO-03 | — | Pending |
-| PROTO-04 | — | Pending |
-| PROTO-05 | — | Pending |
-| PROTO-06 | — | Pending |
-| PROTO-07 | — | Pending |
-| PROTO-08 | — | Pending |
-| PROTO-09 | — | Pending |
-| RULE-01 | — | Pending |
-| RULE-02 | — | Pending |
-| RULE-03 | — | Pending |
-| RULE-04 | — | Pending |
-| RULE-05 | — | Pending |
-| RULE-06 | — | Pending |
-| TRIG-01 | — | Pending |
-| TRIG-02 | — | Pending |
-| TRIG-03 | — | Pending |
-| TRIG-04 | — | Pending |
-| EVAL-01 | — | Pending |
-| EVAL-02 | — | Pending |
-| EVAL-03 | — | Pending |
-| EVAL-04 | — | Pending |
+| STRUC-01 | Phase 1 | Pending |
+| STRUC-02 | Phase 1 | Pending |
+| STRUC-03 | Phase 1 | Pending |
+| STRUC-04 | Phase 1 | Pending |
+| PROTO-01 | Phase 2 | Pending |
+| PROTO-02 | Phase 2 | Pending |
+| PROTO-03 | Phase 2 | Pending |
+| PROTO-04 | Phase 2 | Pending |
+| PROTO-05 | Phase 2 | Pending |
+| PROTO-06 | Phase 2 | Pending |
+| PROTO-07 | Phase 2 | Pending |
+| PROTO-08 | Phase 2 | Pending |
+| PROTO-09 | Phase 2 | Pending |
+| RULE-01 | Phase 2 | Pending |
+| RULE-02 | Phase 2 | Pending |
+| RULE-03 | Phase 2 | Pending |
+| RULE-04 | Phase 2 | Pending |
+| RULE-05 | Phase 2 | Pending |
+| RULE-06 | Phase 2 | Pending |
+| TRIG-01 | Phase 2 | Pending |
+| TRIG-02 | Phase 2 | Pending |
+| TRIG-03 | Phase 2 | Pending |
+| TRIG-04 | Phase 2 | Pending |
+| EVAL-01 | Phase 3 | Pending |
+| EVAL-02 | Phase 3 | Pending |
+| EVAL-03 | Phase 3 | Pending |
+| EVAL-04 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 27 total
-- Mapped to phases: 0
-- Unmapped: 27 ⚠️
+- Mapped to phases: 27
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-17*
-*Last updated: 2026-03-17 after initial definition*
+*Last updated: 2026-03-18 after roadmap creation*
