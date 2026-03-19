@@ -44,8 +44,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Escribir protocolo de 5 pasos con manejo de credenciales y sessions nombradas en SKILL.md via skill-creator
-- [ ] 02-02-PLAN.md — Agregar reglas NUNCA/SIEMPRE con razones y definir triggers y boundaries en SKILL.md
+- [x] 02-01-PLAN.md — Escribir protocolo de 5 pasos con manejo de credenciales y sessions nombradas en SKILL.md
+- [x] 02-02-PLAN.md — Agregar reglas NUNCA/SIEMPRE con razones y definir triggers y boundaries en SKILL.md
 
 ### Phase 3: Evals y Optimizacion
 **Goal**: El skill tiene 5 test cases con assertions que miden la calidad del triggering, y la descripcion del frontmatter fue optimizada con `skill-creator run_loop.py` hasta alcanzar trigger rate >80%
@@ -56,11 +56,11 @@ Plans:
   2. Cada test case tiene assertions que verifican: herramienta correcta, session nombrada, snapshot primero, diagnostico console+network, credenciales buscadas, ciclo completo
   3. `skill-creator run_loop.py` corre sin errores y produce un `grading.json` con trigger rate medido
   4. La descripcion del frontmatter supera el 80% de trigger rate en el benchmark de skill-creator
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Crear evals/evals.json con 5 test cases usando prompts ambiguos y assertions completas
-- [ ] 03-02: Correr run_loop.py con skill-creator y optimizar descripcion hasta >80% trigger rate
+- [ ] 03-01-PLAN.md — Crear evals.json (5 quality evals) y trigger_evals.json (8 trigger rate evals) con prompts ambiguos
+- [ ] 03-02-PLAN.md — Correr run_loop.py y optimizar description del frontmatter hasta >80% trigger rate
 
 ## Progress
 
