@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase 1 completa — lista para Phase 2
-stopped_at: Completed 03-evals-y-optimizacion-02-PLAN.md
-last_updated: "2026-03-19T18:30:06.908Z"
+stopped_at: Completed 03-evals-y-optimizacion-03-PLAN.md
+last_updated: "2026-03-19T23:24:08.713Z"
 last_activity: "2026-03-18 — Plan 01-02: SKILL.md generado con skill-creator (27 lineas, description pushy, 3 TODOs, referencia a playwright-cli-commands.md). Claude Code reconoce el skill. Phase 1 completa."
 progress:
   total_phases: 3
-  completed_phases: 3
-  total_plans: 6
-  completed_plans: 6
+  completed_phases: 2
+  total_plans: 8
+  completed_plans: 7
   percent: 50
 ---
 
@@ -55,6 +55,7 @@ Progress: [█████░░░░░] 50%
 | Phase 02-protocolo-y-reglas P02 | 1 | 1 tasks | 1 files |
 | Phase 03-evals-y-optimizacion P01 | 3 | 2 tasks | 2 files |
 | Phase 03-evals-y-optimizacion P02 | 35 | 3 tasks | 2 files |
+| Phase 03-evals-y-optimizacion P03 | 5 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,7 @@ Recent decisions affecting current work:
 - [Phase 03-evals-y-optimizacion]: SKILL.md NO actualizado — best_score 1/3 (33%) < umbral 70% requerido en 2 rondas con 10 iteraciones totales
 - [Phase 03-evals-y-optimizacion]: Hallazgo critico: mecanismo de skill-matching no dispara con prompts de usuario frustrado en lenguaje casual — trigger_rate=0.0 persistente para positivos, independientemente de description
 - [Phase 03-evals-y-optimizacion]: trigger_evals.json revisado con prompts mas contextualizados (web/sitio/frontend/pagina) — segunda corrida confirm mismo resultado
+- [Phase 03-evals-y-optimizacion]: Assertions de session y snapshot son obligatorias en todos los evals — Paso 2 del protocolo es universal, no opcional por escenario
 
 ### Pending Todos
 
@@ -94,6 +96,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-19T18:30:06.903Z
-Stopped at: Completed 03-evals-y-optimizacion-02-PLAN.md
+Last session: 2026-03-19T23:24:08.709Z
+Stopped at: Completed 03-evals-y-optimizacion-03-PLAN.md
 Resume file: None
