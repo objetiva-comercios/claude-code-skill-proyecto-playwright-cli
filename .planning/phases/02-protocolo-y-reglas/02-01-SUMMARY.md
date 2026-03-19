@@ -125,3 +125,11 @@ None - no external service configuration required.
 ---
 *Phase: 02-protocolo-y-reglas*
 *Completed: 2026-03-19*
+
+## Self-Check: PASSED
+
+- FOUND: ~/.claude/skills/playwright-testing/SKILL.md (81 lineas, < 300)
+- FOUND: .planning/phases/02-protocolo-y-reglas/02-01-SUMMARY.md
+- VERIFIED: Pasos 0, 1, 2, 3, 3bis, 4, 5 presentes (8 matches de 'Paso')
+- VERIFIED: TODO count = 2 exactamente (Reglas y Triggers, no Protocolo)
+- VERIFIED: Commit 8ce3d0e en master
