@@ -42,9 +42,9 @@
 
 ### Validation
 
-- [ ] **EVAL-01**: evals/evals.json con 5 test cases del PRD (error al guardar, login, CRUD sin credenciales, 403, botón sin respuesta)
-- [ ] **EVAL-02**: Test cases incluyen prompts ambiguos que no mencionan "playwright" explícitamente
-- [ ] **EVAL-03**: Assertions verifican: herramienta correcta, session nombrada, snapshot primero, diagnóstico completo, credenciales, ciclo completo
+- [x] **EVAL-01**: evals/evals.json con 5 test cases del PRD (error al guardar, login, CRUD sin credenciales, 403, botón sin respuesta)
+- [x] **EVAL-02**: Test cases incluyen prompts ambiguos que no mencionan "playwright" explícitamente
+- [x] **EVAL-03**: Assertions verifican: herramienta correcta, session nombrada, snapshot primero, diagnóstico completo, credenciales, ciclo completo
 - [ ] **EVAL-04**: Description optimizada via skill-creator run_loop.py con trigger rate >80%
 
 ## v2 Requirements
@@ -92,9 +92,9 @@
 | TRIG-02 | Phase 2 | Complete |
 | TRIG-03 | Phase 2 | Complete |
 | TRIG-04 | Phase 2 | Complete |
-| EVAL-01 | Phase 3 | Pending |
-| EVAL-02 | Phase 3 | Pending |
-| EVAL-03 | Phase 3 | Pending |
+| EVAL-01 | Phase 3 | Complete |
+| EVAL-02 | Phase 3 | Complete |
+| EVAL-03 | Phase 3 | Complete |
 | EVAL-04 | Phase 3 | Pending |
 
 **Coverage:**

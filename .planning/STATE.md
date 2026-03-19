@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase 1 completa — lista para Phase 2
-stopped_at: Phase 03 context gathered
-last_updated: "2026-03-19T17:13:28.624Z"
+stopped_at: Completed 03-evals-y-optimizacion-01-PLAN.md
+last_updated: "2026-03-19T17:39:15.540Z"
 last_activity: "2026-03-18 — Plan 01-02: SKILL.md generado con skill-creator (27 lineas, description pushy, 3 TODOs, referencia a playwright-cli-commands.md). Claude Code reconoce el skill. Phase 1 completa."
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
   percent: 50
 ---
 
@@ -53,6 +53,7 @@ Progress: [█████░░░░░] 50%
 *Updated after each plan completion*
 | Phase 02-protocolo-y-reglas P01 | 7 | 1 tasks | 1 files |
 | Phase 02-protocolo-y-reglas P02 | 1 | 1 tasks | 1 files |
+| Phase 03-evals-y-optimizacion P01 | 3 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [Phase 02-02]: Edicion directa SKILL.md con Edit tool en lugar del loop skill-creator: contenido 100% especificado en CONTEXT.md y PLAN.md, evals son Phase 3
 - [Phase 02-02]: Regla anti-@playwright/mcp en blockquote markdown para maximo contraste visual — inequivoca
 - [Phase 02-02]: 7 reglas (4 NUNCA + 3 SIEMPRE) — la regla de URL del entorno incluida por ser requerimiento de seguridad en CONTEXT.md
+- [Phase 03-evals-y-optimizacion]: evals.json y trigger_evals.json con formato distinto: objeto vs lista plana — dos propositos (quality evals vs trigger rate)
+- [Phase 03-evals-y-optimizacion]: Prompts en espanol sin mencionar playwright/testing — nivel usuario frustrado no tecnico
+- [Phase 03-evals-y-optimizacion]: Assertion sobre credenciales .env solo en evals 2, 3, 4 (casos con auth) — no en 1 y 5 (bug UI puro)
 
 ### Pending Todos
 
@@ -86,6 +90,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-19T17:13:28.604Z
-Stopped at: Phase 03 context gathered
-Resume file: .planning/phases/03-evals-y-optimizacion/03-CONTEXT.md
+Last session: 2026-03-19T17:39:15.519Z
+Stopped at: Completed 03-evals-y-optimizacion-01-PLAN.md
+Resume file: None
