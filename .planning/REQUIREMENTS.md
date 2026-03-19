@@ -26,19 +26,19 @@
 
 ### Rules
 
-- [ ] **RULE-01**: Regla NUNCA para curl/wget en interacciones de browser (con razón: no da console/network/estado)
-- [ ] **RULE-02**: Regla NUNCA para Playwright MCP server (con razón: 4x más tokens, menos control)
-- [ ] **RULE-03**: Regla NUNCA para @playwright/test o scripts ad-hoc de Node.js (con razón: playwright-cli es suficiente)
-- [ ] **RULE-04**: Regla NUNCA para asumir credenciales sin verificar .env (con razón: credenciales incorrectas = diagnóstico falso)
-- [ ] **RULE-05**: Regla SIEMPRE snapshot antes de interactuar (con razón: sin snapshot no hay refs disponibles)
-- [ ] **RULE-06**: Regla SIEMPRE console + network ante error (con razón: diagnóstico incompleto sin ambos)
+- [x] **RULE-01**: Regla NUNCA para curl/wget en interacciones de browser (con razón: no da console/network/estado)
+- [x] **RULE-02**: Regla NUNCA para Playwright MCP server (con razón: 4x más tokens, menos control)
+- [x] **RULE-03**: Regla NUNCA para @playwright/test o scripts ad-hoc de Node.js (con razón: playwright-cli es suficiente)
+- [x] **RULE-04**: Regla NUNCA para asumir credenciales sin verificar .env (con razón: credenciales incorrectas = diagnóstico falso)
+- [x] **RULE-05**: Regla SIEMPRE snapshot antes de interactuar (con razón: sin snapshot no hay refs disponibles)
+- [x] **RULE-06**: Regla SIEMPRE console + network ante error (con razón: diagnóstico incompleto sin ambos)
 
 ### Triggers
 
-- [ ] **TRIG-01**: Description del frontmatter activa el skill ante bugs de frontend, formularios rotos, errores visuales
-- [ ] **TRIG-02**: Description activa el skill ante verificación de flujos web (login, CRUD, navegación)
-- [ ] **TRIG-03**: Description activa el skill ante CUALQUIER interacción necesaria con el navegador web
-- [ ] **TRIG-04**: Skill NO se activa para API testing sin frontend, unit tests, queries DB
+- [x] **TRIG-01**: Description del frontmatter activa el skill ante bugs de frontend, formularios rotos, errores visuales
+- [x] **TRIG-02**: Description activa el skill ante verificación de flujos web (login, CRUD, navegación)
+- [x] **TRIG-03**: Description activa el skill ante CUALQUIER interacción necesaria con el navegador web
+- [x] **TRIG-04**: Skill NO se activa para API testing sin frontend, unit tests, queries DB
 
 ### Validation
 
@@ -82,16 +82,16 @@
 | PROTO-07 | Phase 2 | Complete |
 | PROTO-08 | Phase 2 | Complete |
 | PROTO-09 | Phase 2 | Complete |
-| RULE-01 | Phase 2 | Pending |
-| RULE-02 | Phase 2 | Pending |
-| RULE-03 | Phase 2 | Pending |
-| RULE-04 | Phase 2 | Pending |
-| RULE-05 | Phase 2 | Pending |
-| RULE-06 | Phase 2 | Pending |
-| TRIG-01 | Phase 2 | Pending |
-| TRIG-02 | Phase 2 | Pending |
-| TRIG-03 | Phase 2 | Pending |
-| TRIG-04 | Phase 2 | Pending |
+| RULE-01 | Phase 2 | Complete |
+| RULE-02 | Phase 2 | Complete |
+| RULE-03 | Phase 2 | Complete |
+| RULE-04 | Phase 2 | Complete |
+| RULE-05 | Phase 2 | Complete |
+| RULE-06 | Phase 2 | Complete |
+| TRIG-01 | Phase 2 | Complete |
+| TRIG-02 | Phase 2 | Complete |
+| TRIG-03 | Phase 2 | Complete |
+| TRIG-04 | Phase 2 | Complete |
 | EVAL-01 | Phase 3 | Pending |
 | EVAL-02 | Phase 3 | Pending |
 | EVAL-03 | Phase 3 | Pending |

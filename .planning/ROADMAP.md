@@ -11,7 +11,7 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
 - Decimal phases (2.1, 2.2): Urgent insertions (marcados con INSERTED)
 
 - [x] **Phase 1: Estructura Base** - Skill scaffolding creado con skill-creator, referencia oficial descargada, instalado globalmente
-- [ ] **Phase 2: Protocolo y Reglas** - Protocolo de 5 pasos completo, reglas NUNCA/SIEMPRE con razones, triggers y boundaries definidos
+- [x] **Phase 2: Protocolo y Reglas** - Protocolo de 5 pasos completo, reglas NUNCA/SIEMPRE con razones, triggers y boundaries definidos (completed 2026-03-19)
 - [ ] **Phase 3: Evals y Optimizacion** - 5 test cases con assertions, descripcion optimizada con trigger rate >80%
 
 ## Phase Details
@@ -70,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Estructura Base | 2/2 | Complete | 2026-03-18 |
-| 2. Protocolo y Reglas | 1/2 | In Progress|  |
+| 2. Protocolo y Reglas | 2/2 | Complete   | 2026-03-19 |
 | 3. Evals y Optimizacion | 0/2 | Not started | - |
