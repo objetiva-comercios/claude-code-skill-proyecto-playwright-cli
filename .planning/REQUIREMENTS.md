@@ -14,15 +14,15 @@
 
 ### Protocol
 
-- [ ] **PROTO-01**: Paso 0 — verificar instalación de playwright-cli antes de usarlo
-- [ ] **PROTO-02**: Paso 1 — buscar credenciales en .env.local → .env.development → .env antes de preguntar al usuario
-- [ ] **PROTO-03**: Paso 1 — confirmar URL del entorno (dev/staging/prod) antes de abrir el navegador
-- [ ] **PROTO-04**: Paso 2 — ejecutar snapshot antes de cada interacción significativa
-- [ ] **PROTO-05**: Paso 2 — usar sessions nombradas por proyecto con --session=<nombre>
-- [ ] **PROTO-06**: Paso 3 — ejecutar console + network obligatoriamente ante cualquier error
-- [ ] **PROTO-07**: Paso 3 — identificar causa raíz (401/403, 500, error JS, bug UI puro) y mostrar resumen
-- [ ] **PROTO-08**: Paso 4 — corregir código y mostrar diff de cambios
-- [ ] **PROTO-09**: Paso 5 — re-test del flujo completo desde Paso 2 para confirmar fix
+- [x] **PROTO-01**: Paso 0 — verificar instalación de playwright-cli antes de usarlo
+- [x] **PROTO-02**: Paso 1 — buscar credenciales en .env.local → .env.development → .env antes de preguntar al usuario
+- [x] **PROTO-03**: Paso 1 — confirmar URL del entorno (dev/staging/prod) antes de abrir el navegador
+- [x] **PROTO-04**: Paso 2 — ejecutar snapshot antes de cada interacción significativa
+- [x] **PROTO-05**: Paso 2 — usar sessions nombradas por proyecto con --session=<nombre>
+- [x] **PROTO-06**: Paso 3 — ejecutar console + network obligatoriamente ante cualquier error
+- [x] **PROTO-07**: Paso 3 — identificar causa raíz (401/403, 500, error JS, bug UI puro) y mostrar resumen
+- [x] **PROTO-08**: Paso 4 — corregir código y mostrar diff de cambios
+- [x] **PROTO-09**: Paso 5 — re-test del flujo completo desde Paso 2 para confirmar fix
 
 ### Rules
 
@@ -73,15 +73,15 @@
 | STRUC-02 | Phase 1 | Complete (01-01) |
 | STRUC-03 | Phase 1 | Complete (01-01) |
 | STRUC-04 | Phase 1 | Complete (01-02) |
-| PROTO-01 | Phase 2 | Pending |
-| PROTO-02 | Phase 2 | Pending |
-| PROTO-03 | Phase 2 | Pending |
-| PROTO-04 | Phase 2 | Pending |
-| PROTO-05 | Phase 2 | Pending |
-| PROTO-06 | Phase 2 | Pending |
-| PROTO-07 | Phase 2 | Pending |
-| PROTO-08 | Phase 2 | Pending |
-| PROTO-09 | Phase 2 | Pending |
+| PROTO-01 | Phase 2 | Complete |
+| PROTO-02 | Phase 2 | Complete |
+| PROTO-03 | Phase 2 | Complete |
+| PROTO-04 | Phase 2 | Complete |
+| PROTO-05 | Phase 2 | Complete |
+| PROTO-06 | Phase 2 | Complete |
+| PROTO-07 | Phase 2 | Complete |
+| PROTO-08 | Phase 2 | Complete |
+| PROTO-09 | Phase 2 | Complete |
 | RULE-01 | Phase 2 | Pending |
 | RULE-02 | Phase 2 | Pending |
 | RULE-03 | Phase 2 | Pending |
