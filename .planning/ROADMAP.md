@@ -12,7 +12,7 @@ Construir el skill global `playwright-testing` que reemplaza los defaults de Cla
 
 - [x] **Phase 1: Estructura Base** - Skill scaffolding creado con skill-creator, referencia oficial descargada, instalado globalmente
 - [x] **Phase 2: Protocolo y Reglas** - Protocolo de 5 pasos completo, reglas NUNCA/SIEMPRE con razones, triggers y boundaries definidos (completed 2026-03-19)
-- [x] **Phase 3: Evals y Optimizacion** - 5 test cases con assertions, descripcion optimizada con trigger rate >80% (completed 2026-03-19)
+- [ ] **Phase 3: Evals y Optimizacion** - 5 test cases con assertions, descripcion optimizada con trigger rate >80% (gap closure en progreso)
 
 ## Phase Details
 
@@ -56,11 +56,13 @@ Plans:
   2. Cada test case tiene assertions que verifican: herramienta correcta, session nombrada, snapshot primero, diagnostico console+network, credenciales buscadas, ciclo completo
   3. `skill-creator run_loop.py` corre sin errores y produce un `grading.json` con trigger rate medido
   4. La descripcion del frontmatter supera el 80% de trigger rate en el benchmark de skill-creator
-**Plans**: 2 plans
+**Plans**: 4 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Crear evals.json (5 quality evals) y trigger_evals.json (8 trigger rate evals) con prompts ambiguos
-- [ ] 03-02-PLAN.md — Correr run_loop.py y optimizar description del frontmatter hasta >80% trigger rate
+- [x] 03-01-PLAN.md — Crear evals.json (5 quality evals) y trigger_evals.json (8 trigger rate evals) con prompts ambiguos
+- [x] 03-02-PLAN.md — Correr run_loop.py y optimizar description del frontmatter hasta >80% trigger rate
+- [ ] 03-03-PLAN.md — (gap closure) Completar assertions faltantes de session y snapshot en evals 3 y 4
+- [ ] 03-04-PLAN.md — (gap closure) Decision sobre SC3 (grading.json vs results.json) y SC4 (trigger rate 80%)
 
 ## Progress
 
@@ -71,4 +73,4 @@ Phases execute in numeric order: 1 → 2 → 3
 |-------|----------------|--------|-----------|
 | 1. Estructura Base | 2/2 | Complete | 2026-03-18 |
 | 2. Protocolo y Reglas | 2/2 | Complete   | 2026-03-19 |
-| 3. Evals y Optimizacion | 2/2 | Complete   | 2026-03-19 |
+| 3. Evals y Optimizacion | 2/4 | Gap Closure | — |
