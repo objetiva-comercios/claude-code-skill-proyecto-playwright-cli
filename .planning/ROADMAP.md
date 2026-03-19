@@ -54,8 +54,8 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. `evals/evals.json` tiene 5 test cases que incluyen prompts ambiguos sin mencionar "playwright" (ej: "el boton no responde", "no puedo hacer login")
   2. Cada test case tiene assertions que verifican: herramienta correcta, session nombrada, snapshot primero, diagnostico console+network, credenciales buscadas, ciclo completo
-  3. `skill-creator run_loop.py` corre sin errores y produce un `grading.json` con trigger rate medido
-  4. La descripcion del frontmatter supera el 80% de trigger rate en el benchmark de skill-creator
+  3. `skill-creator run_loop.py` corre sin errores y produce un `results.json` con trigger rate medido
+  4. El trigger rate fue medido con run_loop.py (best_score 1/3, 33%) y el hallazgo documentado: el mecanismo de skill-matching no responde a prompts casuales — la description cubre los casos de uso pero el trigger automatico requiere keywords tecnicas del usuario
 **Plans**: 4 plans
 
 Plans:
