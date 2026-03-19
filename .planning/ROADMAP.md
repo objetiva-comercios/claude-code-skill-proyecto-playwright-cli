@@ -41,11 +41,11 @@ Plans:
   3. El protocolo de credenciales busca `.env.local` → `.env.development` → `.env` antes de preguntar al usuario
   4. El SKILL.md tiene menos de 300 lineas y referencia `references/playwright-cli-commands.md` para syntax detallada
   5. Los boundaries explicitos listan cuando NO usar el skill (API testing sin frontend, unit tests, queries DB)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Escribir protocolo de 5 pasos con manejo de credenciales y sessions nombradas en SKILL.md via skill-creator
-- [ ] 02-02: Agregar reglas NUNCA/SIEMPRE con razones y definir triggers y boundaries en SKILL.md
+- [ ] 02-01-PLAN.md — Escribir protocolo de 5 pasos con manejo de credenciales y sessions nombradas en SKILL.md via skill-creator
+- [ ] 02-02-PLAN.md — Agregar reglas NUNCA/SIEMPRE con razones y definir triggers y boundaries en SKILL.md
 
 ### Phase 3: Evals y Optimizacion
 **Goal**: El skill tiene 5 test cases con assertions que miden la calidad del triggering, y la descripcion del frontmatter fue optimizada con `skill-creator run_loop.py` hasta alcanzar trigger rate >80%
@@ -70,5 +70,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Estructura Base | 2/2 | Complete | 2026-03-18 |
-| 2. Protocolo y Reglas | 0/2 | Not started | - |
+| 2. Protocolo y Reglas | 0/2 | Planned | - |
 | 3. Evals y Optimizacion | 0/2 | Not started | - |
