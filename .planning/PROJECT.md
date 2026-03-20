@@ -51,7 +51,7 @@ Hallazgo clave: mecanismo de skill-matching de Claude Code no dispara con prompt
 - **Herramienta**: skill-creator obligatorio para creación, evals y optimización
 - **Tamaño**: SKILL.md principal < 300 líneas, detalle de comandos en referencia
 - **Instalación**: ~/.claude/skills/playwright-testing/ (global, no por proyecto)
-- **Dependencia**: playwright-cli debe estar instalado (`npm install -g @playwright/mcp@latest`)
+- **Dependencia**: playwright-cli debe estar instalado (`npm install -g playwright-cli`)
 
 ## Key Decisions
 

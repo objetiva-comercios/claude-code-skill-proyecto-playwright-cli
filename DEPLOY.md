@@ -10,7 +10,7 @@ curl -sL https://raw.githubusercontent.com/objetiva-comercios/claude-code-skill-
 
 - **git** (cualquier version)
 - **Claude Code** instalado (`~/.claude/` debe existir)
-- **playwright-cli** (`npm install -g @playwright/mcp@latest`)
+- **playwright-cli** (`npm install -g playwright-cli`)
 
 ## Que instala
 
@@ -93,6 +93,6 @@ verificar instalacion → credenciales → snapshot+session → console/network 
 |----------|-------|----------|
 | Claude no reconoce la skill | `~/.claude/skills/playwright-testing/SKILL.md` no existe | Reinstalar con el comando curl |
 | El comando aparece como `/proyecto-playwright-cli` | La carpeta se llama `proyecto-playwright-cli` en vez de `playwright-testing` (tipicamente por clonar el repo directo en `~/.claude/skills/`) | Correr el install.sh — detecta y corrige carpetas mal nombradas automaticamente |
-| `playwright-cli: command not found` | playwright-cli no esta instalado | `npm install -g @playwright/mcp@latest` |
+| `playwright-cli: command not found` | playwright-cli no esta instalado | `npm install -g playwright-cli` |
 | `curl` falla al descargar | El repo no es accesible | Verificar que el repo es publico o que tenes acceso. Probar la URL en el navegador |
 | "Claude Code no parece estar instalado" | No existe `~/.claude/` | Verificar que Claude Code esta instalado. El directorio se crea automaticamente al usarlo |
