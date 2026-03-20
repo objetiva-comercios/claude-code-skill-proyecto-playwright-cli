@@ -1,0 +1,68 @@
+{
+  "skill_name": "playwright-testing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "el formulario de contacto no guarda nada cuando le doy submit, no aparece ningun mensaje de error ni de exito, simplemente queda igual. Ya lo probe varias veces y siempre pasa lo mismo.",
+      "expected_output": "Claude usa playwright-cli con session nombrada, toma snapshot antes de interactuar con el formulario, ejecuta console y network ante el error, identifica causa raiz y muestra resumen de diagnostico antes de proponer fix",
+      "expectations": [
+        "El transcript menciona playwright-cli (no curl, no MCP, no scripts Node.js)",
+        "Usa flag -s= o --session= con nombre de proyecto en los comandos",
+        "Ejecuta snapshot antes de interactuar con el formulario",
+        "Ejecuta console Y network ante el error (ambos, no solo uno)",
+        "Muestra resumen de diagnostico (error encontrado, causa identificada, accion propuesta) antes de tocar codigo"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "no puedo hacer login en la app, pongo mi usuario y contrasena y me rebota a la misma pagina de login sin ningun mensaje de error. Lo intente con distintas cuentas y a todas les pasa lo mismo.",
+      "expected_output": "Claude usa playwright-cli con session nombrada, busca credenciales en archivos .env antes de pedir al usuario, toma snapshot, ejecuta console y network ante el error, identifica la causa raiz (401/403 vs error JS vs bug UI) y propone fix",
+      "expectations": [
+        "El transcript menciona playwright-cli (no curl, no MCP, no scripts Node.js)",
+        "Busco en archivos .env (como .env.local, .env.development, .env) antes de preguntar credenciales al usuario",
+        "Usa flag -s= o --session= con nombre de proyecto",
+        "Ejecuta snapshot antes de interactuar con el formulario de login",
+        "Ejecuta console Y network ante el error para identificar si es 401, 403, error JS, o bug UI",
+        "Muestra resumen de diagnostico antes de tocar codigo"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "hice un CRUD de productos pero cuando intento crear uno nuevo me da error. No se si es un tema de permisos o que, porque a veces me aparece un mensaje raro y otras veces no pasa nada.",
+      "expected_output": "Claude usa playwright-cli con session nombrada, busca credenciales en .env, toma snapshot, intenta crear un producto, ejecuta console y network ante el error, identifica la causa raiz (permisos, 403, error backend, bug frontend) y propone fix",
+      "expectations": [
+        "El transcript menciona playwright-cli (no curl, no MCP, no scripts Node.js)",
+        "Busco en archivos .env antes de preguntar credenciales al usuario",
+        "Usa flag -s= o --session= con nombre de proyecto en los comandos",
+        "Ejecuta snapshot antes de interactuar con el CRUD",
+        "Ejecuta console Y network ante el error (ambos)",
+        "Identifica causa raiz segun la tabla: 401/403 si credenciales, 500 si backend, error JS si frontend, o bug UI puro"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "me da 403 al entrar a la seccion de admin de la app, antes funcionaba bien y no se que cambio. Intente recargando la pagina y sigue igual.",
+      "expected_output": "Claude usa playwright-cli con session nombrada, busca credenciales en .env, toma snapshot de la seccion de admin, ejecuta console y network para confirmar el 403, identifica causa (credenciales expiradas o insuficientes) y propone fix",
+      "expectations": [
+        "El transcript menciona playwright-cli (no curl, no MCP, no scripts Node.js)",
+        "Busco en archivos .env antes de preguntar credenciales al usuario",
+        "Usa flag -s= o --session= con nombre de proyecto en los comandos",
+        "Ejecuta snapshot antes de navegar a la seccion de admin",
+        "Ejecuta network para confirmar el HTTP 403 y console para ver si hay error JS adicional",
+        "Identifica que un 403 corresponde a credenciales incorrectas o expiradas segun la tabla de causa raiz"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "el boton de pagar no hace nada cuando lo aprieto, ni siquiera gira el spinner de carga. Probé varias veces en distintos productos y siempre pasa lo mismo, el boton esta ahi pero no reacciona.",
+      "expected_output": "Claude usa playwright-cli con session nombrada, toma snapshot para obtener el ref del boton, hace click, ejecuta console y network para ver si hay error JS o request fallida, identifica la causa raiz y propone fix",
+      "expectations": [
+        "El transcript menciona playwright-cli (no curl, no MCP, no scripts Node.js)",
+        "Usa flag -s= o --session= con nombre de proyecto",
+        "Ejecuta snapshot antes de hacer click para obtener el ref del elemento",
+        "Ejecuta console Y network despues del click para diagnosticar si es error JS o request fallida",
+        "Muestra resumen de diagnostico (error encontrado, causa, accion) antes de tocar codigo"
+      ]
+    }
+  ]
+}

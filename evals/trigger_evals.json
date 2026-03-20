@@ -1,0 +1,10 @@
+[
+  {"query": "el formulario de contacto de la web no guarda nada cuando le doy submit, no aparece ningun mensaje de error ni de exito en la pagina", "should_trigger": true},
+  {"query": "no puedo hacer login en el sitio, pongo mi usuario y contrasena y me vuelve a mostrar la pagina de login sin ninguna explicacion", "should_trigger": true},
+  {"query": "hice un CRUD de productos en el frontend pero no puedo crear nada, a veces me aparece un mensaje raro en la pantalla y otras veces no pasa nada", "should_trigger": true},
+  {"query": "me da 403 al entrar a la seccion de admin de la app web, antes funcionaba bien y no se que cambio", "should_trigger": true},
+  {"query": "el boton de pagar no hace nada cuando lo aprieto en el sitio, ni siquiera gira el spinner de carga, probe varios productos", "should_trigger": true},
+  {"query": "corre los unit tests del proyecto y decime si pasan todos", "should_trigger": false},
+  {"query": "hace un curl a la API de pagos para ver si responde bien y que status code devuelve", "should_trigger": false},
+  {"query": "ejecuta esta query SQL en la base de datos y decime cuantos usuarios hay registrados", "should_trigger": false}
+]
