@@ -15,7 +15,7 @@
 # Requisitos:
 #   - git
 #   - Claude Code instalado (~/.claude/ debe existir)
-#   - playwright-cli instalado (npm install -g playwright-cli)
+#   - playwright-cli instalado (npm install -g @playwright/cli@latest)
 # =============================================================================
 
 set -euo pipefail
@@ -61,7 +61,7 @@ if command -v playwright-cli >/dev/null 2>&1; then
 else
     warn "playwright-cli no esta instalado"
     warn "La skill lo necesita para funcionar. Instalar con:"
-    echo "    npm install -g playwright-cli"
+    echo "    npm install -g @playwright/cli@latest"
     echo ""
 fi
 
@@ -145,6 +145,6 @@ echo "  interaccion con un navegador web."
 echo ""
 if ! command -v playwright-cli >/dev/null 2>&1; then
     echo "  ⚠ Recordatorio: instalar playwright-cli antes de usar:"
-    echo "    npm install -g playwright-cli"
+    echo "    npm install -g @playwright/cli@latest"
     echo ""
 fi

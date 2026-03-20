@@ -13,7 +13,7 @@ Usar playwright-cli (no playwright-mcp, no el navegador manual) es obligatorio p
 ## Protocolo de diagnostico
 
 **Paso 0 — Verificar instalacion**
-Correr `playwright-cli --version`. Si falla, instalar automaticamente: `npm install -g playwright-cli`. No preguntar al usuario.
+Correr `playwright-cli --version`. Si falla, instalar automaticamente: `npm install -g @playwright/cli@latest`. No preguntar al usuario.
 
 **Paso 1 — URL y credenciales**
 Confirmar URL del entorno (dev/staging/prod) — NUNCA asumir produccion. Buscar credenciales (patrones: `*_URL`, `*_USER`, `*_PASSWORD`, `*_EMAIL`, `*_TOKEN`, `*_API_KEY`) en este orden:

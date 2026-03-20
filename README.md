@@ -6,7 +6,7 @@ Skill global para Claude Code que fuerza el uso de `playwright-cli` como unico p
 
 | Categoria | Tecnologia |
 |-----------|------------|
-| CLI | playwright-cli (`npm install -g playwright-cli`) |
+| CLI | playwright-cli (`npm install -g @playwright/cli@latest`) |
 | Plataforma | Claude Code skills system |
 | Evaluacion | skill-creator (run_loop.py) |
 | Referencia | microsoft/playwright-cli (repo oficial) |
@@ -15,7 +15,7 @@ Skill global para Claude Code que fuerza el uso de `playwright-cli` como unico p
 
 - **Claude Code** instalado (`~/.claude/` debe existir)
 - **Node.js** (cualquier version LTS)
-- **playwright-cli** — se instala con `npm install -g playwright-cli`
+- **playwright-cli** — se instala con `npm install -g @playwright/cli@latest`
 - **git** (para el instalador)
 
 ## Instalacion
